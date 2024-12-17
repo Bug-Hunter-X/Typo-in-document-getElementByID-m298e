@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    //Incorrect way to select an element, leading to unexpected behavior.
+    let myElement = document.getElementByID("myDiv"); 
+    if (myElement) {
+      myElement.innerHTML = "Text changed!";
+    }
+  </script>
+</body>
+</html>
